@@ -586,6 +586,21 @@ fmt.Println(s1)
 | strings.Index(),strings.LastIndex() | 子串出现的位置 |
 | strings.Join(a[]string, sep string) |    join操作    |
 
+```go
+//通过unsafe.Pointer（指针转换）和uintptr（指针运算）实现转换 
+func str2bytes(s string) []byte {		//字符串转byte数组
+	x := (*[2]uintptr)(unsafe.Pointer(&s))
+	h := [3]uintptr{x[0], x[1], x[1]}
+	return *(*[]byte)(unsafe.Pointer(&h))
+}
+
+func bytes2str(b []byte) string {		//byte数组转字符串
+	return *(*string)(unsafe.Pointer(&b))
+}
+```
+
+
+
 ### byte和rune类型
 
 组成每个字符串的元素叫做“字符”，可以通过遍历或者单个获取字符串元素获得字符。 字符用单引号（’）包裹起来，如：
@@ -1280,6 +1295,12 @@ func main() {
 	fmt.Println(b == nil)       //false
 	fmt.Println(c == nil)       //false
 	// fmt.Println(c == d)   //切片是引用类型，不支持直接比较，只能和nil比较
+    
+    
+    
+    str := "abcd"				//字符串切片,str是字符串,stra是切片
+    str2 := str 				//str2 是string值类型,copy
+    var stra =[]string{str}		//stra 是切片,数组
 }
 ```
 
