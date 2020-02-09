@@ -5,6 +5,7 @@
 ```
 varies--v.(大小、形状等)相异，不同，有别;(根据情况)变化，改变;变更;(略做)改变--vary的第三人称单数
 vary--v.(大小、形状等)相异，不同，有别;(根据情况)变化，改变;变更;(略做)改变
+GFM---GitHub Flavored Markdown
 ```
 
 **MarkDown** 是由[Daring Fireball](http://daringfireball.net/)创建的;这个最初的指南准则地址在[这](http://daringfireball.net/projects/markdown/syntax)。但是，他的语法在不同的解析器和编辑器有所不同。**Typora**用的是 [GitHub][GFM]风格的**MarkDown**
@@ -525,6 +526,15 @@ itself指施动并受其影响的动物或事物
 for example例如;比如
 web site网站
 case--n.具体情况;事例;实例;实情;事实;特殊情况--v.奏爵士乐，跳爵士舞;游荡;使活泼
+clicking使发出咔嗒声; 使咔嗒响; 点击，单击; 被突然明白; 豁然开朗; click的现在分词
+link联系; 连接; 关系; 纽带; 交通路线; 通讯手段; 把连接起来; 相关联; 说明有联系
+will谈及将来; 愿，要，会，定要; 烦劳别人做事时用; 想要; 希望; 愿意; 喜欢; 立定志向; 决心; 决意; 立遗嘱将赠与; 立遗嘱赠与; 意志; 毅力; 自制力; 意愿; 心愿; 遗嘱
+expand扩大，增加，增强; 扩展，发展; 细谈; 详述; 详细阐明
+editing编辑，校订; 编选; 编纂; 编集; 编辑; edit的现在分词
+command命令; 指令; 控制; 管辖; 指挥; 指挥，统率; 应得; 博得; 值得
+click使发出咔嗒声; 使咔嗒响; 点击，单击; 被突然明白; 豁然开朗; 短而尖的声音; 咔嗒声; 点按，单击; 吸气音
+open开放的; 敞开的; 张开的; 张着的; 展开; 开放; 开; 打开; 开启; 户外; 野外; 旷野; 公开; 非秘密
+hyperlink超级链接; 超链接; 把…做超级链接; 把…做超链接
 ```
 
 引用链接使用第二组方括号，在其中放置选择的标签以标识链接：
@@ -544,3 +554,457 @@ Then, anywhere in the document, you define your link label on a line by itself l
 [id]: http://example.com/	"Optional Title Here"
 
 隐式链接名称快捷方式允许您省略链接的名称，在这种情况下，链接文本本身用作名称。只需使用一组空白的方括号-例如，要将“Google”链接到Google.com网站，您只需编写：
+
+``` markdown
+[Google][]
+And then define the link:
+
+[Google]: http://google.com/
+```
+
+在Typora中，单击链接将展开进行编辑，command+click将在您的web浏览器中打开超链接。
+
+### URLs
+
+```
+allows允许; 准许; 给予; 允许进入; allow的第三人称单数
+insert插入; 嵌入; 添加，加插; 插页，广告附加页; 插入物; 添加物
+links联系; 连接; 关系; 纽带; 交通路线; 通讯手段; 把连接起来; 相关联; 说明有联系; link的第三人称单数和复数
+wrapped极高兴的; 十分满意的; 包，裹; 用…包裹; 用…缠绕; wrap的过去分词和过去式
+brackets括号; 组级，等级; 托架，支架; 用括弧括上; 把…等同考虑; 把…相提并论; bracket的第三人称单数和复数
+also而且; 此外; 也; 同样
+automatically自动地；机械地；无意识地; 不经思索的
+link联系; 连接; 关系; 纽带; 交通路线; 通讯手段; 把连接起来; 相关联; 说明有联系
+standard标准，水平，规格，规范; 正常的水平; 应达到的标准; 行为标准; 道德水准; 普通
+Images【医】影象; 形象; 印象
+similar相像的; 相仿的; 类似的; 类似物; 相像的人; 相似物
+syntax句法; 句法规则; 语构
+require需要; 依靠; 依赖; 使做; 使拥有; 规定
+additional附加的; 额外的; 外加的
+char烧黑，烧焦; 当家庭清洁工; 茶
+start开始，着手，动手; 发生，开始进行; 开动; 发动; 启动; 开头; 开端; 开始; 起始优势; 良好的基础条件
+inserting插入; 嵌入; 添加，加插; insert的现在分词
+looks看; 瞧; 查找; 眼神; 表情; 神情; 脸色; 寻找; 寻求; 注意; 留心; 留神; look的第三人称单数和复数
+like this像这样/像那样/照这样; 像这样
+```
+
+Typora允许您将URL作为链接插入，并用`<`括号`>`包装。
+
+`<i@typora.io>` 变为 <i@typora.io>.
+
+Typora还会自动链接标准URLs. e.g: www.google.com 。
+
+### 图片	--	Images
+
+```
+Images【医】影象; 形象; 印象
+similar相像的; 相仿的; 类似的; 类似物; 相像的人; 相似物
+syntax句法; 句法规则; 语构
+require需要; 依靠; 依赖; 使做; 使拥有; 规定
+additional附加的; 额外的; 外加的
+char烧黑，烧焦; 当家庭清洁工; 茶
+start开始，着手，动手; 发生，开始进行; 开动; 发动; 启动; 开头; 开端; 开始; 起始优势; 良好的基础条件
+inserting插入; 嵌入; 添加，加插; insert的现在分词
+looks看; 瞧; 查找; 眼神; 表情; 神情; 脸色; 寻找; 寻求; 注意; 留心; 留神; look的第三人称单数和复数
+like this像这样/像那样/照这样; 像这样
+able to可以; 有能力; 原来能够按时完成
+insert插入; 嵌入; 添加，加插; 插页，广告附加页; 插入物; 添加物
+image file图像档案
+source code源码
+that is即; 用于纠正之前说过的内容
+editing编辑，校订; 编选; 编纂; 编集; 编辑; edit的现在分词
+able to可以; 有能力; 原来能够按时完成
+drag拖，拉，拽，扯; 缓慢而费力地移动; 生拉硬拽; 劝勉强来; 令人厌烦的人; 乏味无聊的事; 累赘; 拖累; 绊脚石; 抽一口; 吸一口
+insert插入; 嵌入; 添加，加插; 插页，广告附加页; 插入物; 添加物
+image形象; 印象; 声誉; 画像; 雕像; 塑像; 反映; 想像; 作…的像; 象征
+from从…起，始于; 从…开始; 寄自，得自
+image file图像档案
+drop--v.(意外地)落下，掉下，使落下;(故意)降下，使降落;累倒;累垮--n.滴;水珠;少量;微量;一点点;下降;下跌;减少
+modify--v.调整;稍作修改;使更适合;缓和;使温和;修饰
+relative--adj.相比较而言的;比较的;相对的;相关联的;相比之下存在(或有)的--n.亲戚;亲属;同类事物
+currently--adv.现时;目前;当前;时下
+editing--v.编辑，校订(文章、书籍等);编选;编纂;编集;(屏幕)编辑--edit的现在分词
+sub-directory---子目录
+specify具体说明; 明确规定; 详述; 详列
+prefix前缀; 前置代号; 称谓; 在…前面加
+and then然后
+preview--n.预映;预演;预展;(报刊上有关电影、电视节目等的)预先评述，预告--v.为(影视节目)写预评;概述;扼要介绍
+property--n.所有物;财产;财物;不动产;房地产;房屋及院落;庄园
+treated--v.以…态度对待;以…方式对待;把…看作;把…视为;处理;讨论--treat的过去分词和过去式
+treat--v.以…态度对待;以…方式对待;把…看作;把…视为;处理;讨论;治疗--n.乐事;乐趣;款待
+```
+
+图像的语法与链接相似，但它们需要额外的`!`链接开始前的字符。插入图像的语法如下：
+
+``` markdown
+![Alt text](/path/to/img.jpg)
+
+![Alt text](/path/to/img.jpg "Optional title")
+```
+
+您可以使用拖放从图像文件或web浏览器插入图像。您可以通过单击图像来修改标记源代码。如果使用拖放添加的图像与当前编辑的文档位于同一目录或子目录中，则将使用相对路径。
+
+如果您使用**MarkDown**来构建网站，则可以使用**YAML Front Matters**中的属性`typora-root-url`为本地计算机上的图像预览指定URL前缀。例如，在**YAML Front Matters**中输入`typora-root-url:/User/Abner/Website/typora.io/`，然后`![alt](/blog/img/test.png)`将被视为`![alt](file:///User/Abner/Website/typora.io/blog/img/test.png)`在Typora中。
+
+您可以[在此处](https://support.typora.io/Images/)找到更多详细信息。
+
+### Emphasis
+
+```
+emphasis--n.强调;重视;重要性;(对某个词或短语的)强调，加重语气，重读
+treats以…态度对待; 以…方式对待; 把…看作; 把…视为; 处理; 讨论; 乐事; 乐趣; 款待; treat的第三人称单数和复数
+asterisks星号; 加星号于; asterisk的第三人称单数和复数
+underscores在…下面划线; 强调; 着重说明; 下划线，底线; underscore的第三人称单数和复数
+indicators指示信号; 标志; 迹象; 指示器; 指针; 转向灯; 方向灯; indicator的复数
+emphasis强调; 重视; 重要性; 强调，加重语气，重读
+wrapped极高兴的; 十分满意的; 包，裹; 用…包裹; 用…缠绕; wrap的过去分词和过去式
+tag标签; 标牌; 称呼; 诨名; 附加语(为加强语气，如Yes, I do一句中的I do); 给…加上标签;
+E.g---例如
+GFM---GitHub Flavored Markdown
+ignore忽视; 对…不予理会; 佯装未见; 不予理睬
+in words用…的话说;引用…的原话说
+commonly通常; 常常; 大多数人地
+code密码; 暗码; 电码; 代码; 编码; 道德准则; 行为规范; 为…编码; 把…译成密码; 编程序
+like this像这样/像那样/照这样; 像这样
+produce生产; 制造; 生长; 出产; 繁育; 制作，造出; 产品; 农产品
+literal字面意义的; 完全按原文的; 缺乏想象力的
+asterisk星号; 加星号于
+underscore在…下面划线; 强调; 着重说明; 下划线，底线
+position位置; 地方; 恰当位置; 正确位置; 姿态，姿势; 放置方式; 安装; 安置; 使处于
+otherwise否则; 不然; 除此以外; 在其他方面; 另; 亦
+delimiter定界符，分隔符
+backslash反斜线
+escape逃跑，逃走，逃出; 逃脱，摆脱，逃避; 避开，避免; 逃跑; 逃脱; 逃避; 逃避现实; 解脱; 
+recommends推荐; 举荐; 介绍; 劝告; 建议; 使显得吸引人; 使受欢迎; recommend的第三人称单数
+symbol象征; 符号; 代号; 记号; 用符号代表
+```
+
+标记将星号（`*`）和下划线（`_`）视为强调的指示器。用一个`*`或`_`包装的文本将用一个HTML `<em>`标记包装。例如：
+
+``` markdown
+*single asterisks*
+
+_single underscores_
+```
+
+输出显示:
+
+*single asterisks*
+
+_single underscores_
+
+ [^GFM] 将忽略单词中的下划线，通常用于代码和名称，如下所示：
+
+[^GFM]: GitHub Flavored Markdown.
+
+> wow_great_stuff
+>
+> do_this_and_do_that_and_another_thing.
+
+要在原本用作强调分隔符的位置生成文字星号或下划线，可以对其进行反斜杠转义：
+
+``` markdown
+\*this text is surrounded by literal asterisks\*
+```
+
+Typora建议使用`*`符号。
+
+### 字体加粗	--	Strong
+
+```
+double两倍的; 加倍的; 双的; 成双的; 成对的; 供两者用的; 双人的; 双重地; 两倍地; 成对地; 弓身地; 两倍; 两倍数; 两倍量; 一杯双份的烈酒; 酷似的人; 极相似的对应物; 加倍; 是…的两倍; 把…对折; 折叠; 以二垒打使上二垒; 击出二垒安打
+will谈及将来; 愿，要，会，定要; 烦劳别人做事时用; 想要; 希望; 愿意; 喜欢; 立定志向; 决心; 决意; 立遗嘱将赠与; 立遗嘱赠与; 意志; 毅力; 自制力; 意愿; 心愿; 遗嘱
+cause原因; 起因; 理由; 动机; 缘故; 事业，目标，思想; 使发生; 造成; 引起; 导致
+enclosed围住的，封闭的; 随函附上的; 附上的; 与外界隔绝的; 把…围起来; 围住; 附入; 随函附上; enclose的过去分词和过去式
+contents所容纳之物; 所含之物; 内容; 目录，目次; 主题，主要内容; 满足; 满意; 知足; 使满意; 使满足; content的第三人称单数和复数
+wrapped极高兴的; 十分满意的; 包，裹; 用…包裹; 用…缠绕; wrap的过去分词和过去式
+HTML超文本标记语言
+strong强壮的; 强健的; 强的; 强劲的; 强烈的，深刻的
+tag标签; 标牌; 称呼; 诨名; 附加语(为加强语气，如Yes, I do一句中的I do); 给…加上标签; 把…
+```
+
+双`*`或`_`将使其包含的内容用HTML `<strong>`标记包装，例如：
+
+``` markdown
+**double asterisks**
+
+__double underscores__
+```
+
+输出显示:
+
+**double asterisks**
+
+__double underscores__
+
+Typora建议使用`**`符号
+
+### 代码	--	Code
+
+```
+indicate表明; 显示; 象征; 暗示; 间接提及; 示意
+inline一列式；排成行的；串联式的；联机的；轴向式的；在线上的
+span持续时间; 范围; 包括的种类; 墩距，跨距，跨度; 持续; 贯穿; 包括; 涵盖; 横跨; 跨越
+backtick---回音
+quotes--v.引用;引述;举例说明;开价;出价;报价--n.引用
+preformatted--预定义格式
+wrap包，裹; 用…包裹; 用…缠绕; 披肩，围巾; 包裹材料; 完成拍摄，停机
+quotes引用; 引述; 举例说明; 开价; 出价; 报价; quote的第三人称单数和复数
+Unlike不像; 与…不同; 非…的特征; 不同; 相异
+indicates表明; 显示; 象征; 暗示; 间接提及; 示意; indicate的第三人称单数
+paragraph段; 段落; 将…分段; 写短文报导
+For example例如;比如
+```
+
+要指示代码的内联范围，请用反引号（`）将其括起来。与预先格式化的代码块不同，代码范围指示正常段落中的代码。例如：
+
+``` markdown
+Use the `printf()` function.
+```
+
+显示结果:
+
+Use the `printf()` function.
+
+### 删除线	--	Strikethrough
+
+```
+strikethrough--删除线;加删除线;删除线效果
+missing from在…中缺少的
+```
+
+GFM添加语法以创建删除线文本，标准**MarkDown**中缺少删除线文本。
+
+`~~Mistaken text.~~` becomes ~~Mistaken text.~~
+
+### 下划线	--	Underlines
+
+```
+underlines--v.在(词语等下)画线;画底线标出;强调;突现
+powered---adj.由…驱动的;电动的--v.驱动，推动(机器或车辆);(使)迅猛移动，快速前进--power的过去分词和过去式
+```
+
+下划线是由原始HTML提供的。
+
+`<u>Underline</u>` 变为 <u>Underline</u>.
+
+### 表情符号	--	Emoji :smile:
+
+```
+emoji表情符号
+smile微笑; 笑; 微笑着说; 微笑地表示; 现出; 笑容
+pressing紧急的; 急迫的; 难以推却的; 不容忽视的; 模压制品，同批次的模压产品; 压，挤，推，施加压力; 按，压; 将…塞进; 把…按入; press的现在分词
+Council (United Nations))经济及社会理事会
+enabling使能够; 使有机会; 使成为可能; 使可行; 使实现; enable的现在分词
+preference偏爱; 爱好; 喜爱; 偏爱的事物; 最喜爱的东西
+inputting输入; input的现在分词
+Symbols象征; 符号; 代号; 记号; symbol的第三人称单数和复数
+menu bar菜单栏
+trigger扳机; 起因，诱因; 触发器; 引爆器; 发动; 引起; 触发; 开动; 起动
+suggestions建议; 提议; 使人作推测的理由; 微量; 些微; 迹象; suggestion的复数
+automatically自动地；机械地；无意识地; 不经思索的
+panel嵌板，镶板，方格板块; 金属板，板金; 镶条，嵌条，饰片; 镶板
+```
+
+输入emoji，语法为`:smile:`。
+
+用户可以按`ESC`键触发emoji的自动完成建议，或在“首选项”面板上启用后自动触发。此外，通过进入菜单栏（macOS）中的`Edit` -> `Emoji & Symbols`，还支持直接输入UTF-8表情符号字符。
+
+### 内联数学	--	Inline Math
+
+```
+preference偏爱; 爱好; 喜爱; 偏爱的事物; 最喜爱的东西
+Tab标签; 签条; 突耳; 凸舌; 账单，账款; 费用; 餐厅账单; 药片，药丸; 说适合于; 把视为…; 使用制表键
+wrap包，裹; 用…包裹; 用…缠绕; 披肩，围巾; 包裹材料; 完成拍摄，停机
+command命令; 指令; 控制; 管辖; 指挥; 指挥，统率; 应得; 博得; 值得
+For example例如;比如
+rendered使成为; 使变得; 使处于某状态; 给予; 提供; 回报; 递交; 呈献; 提交; render的过去
+feature特色; 特征; 特点; 面容的一部分; 特写，专题节目; 以…为特色; 由…主演; 以…为主要组成; 起重要作用; 占重要地位
+please请，请问; 请千万，请务必，的确; 太感谢了，太好了; 使满意; 使愉快; (常用在as或what、 where等词后)想，选择，喜欢
+enable使能够; 使有机会; 使成为可能; 使可行; 使实现
+trigger扳机; 起因，诱因; 触发器; 引爆器; 发动; 引起; 触发; 开动; 起动
+inline一列式；排成行的；串联式的；联机的；轴向式的；在线上的
+preview预映; 预演; 预展; 预先评述，预告; 为写预评; 概述; 扼要介绍
+math同 mathematics; 数学
+input投入资源; 投入; 输入; 输入的信息; 输入端
+press报章杂志; 报刊; 印刷媒体; 记者; 新闻工作者; 新闻界; 报道; 评论; 压，挤，推，施加压力; 按，压; 将…塞进; 把…按入
+ESC地球卫星公司(Earth Satellite Corporation); (=Economic and Social Council (United Nations))经济及社会理事会
+key钥匙; 关键; 要诀; 键; 用键盘输入; 键入; 用钥匙划坏; 最重要的; 主要的; 关键的
+command命令; 指令; 控制; 管辖; 指挥; 指挥，统率; 应得; 博得; 值得
+```
+
+若要使用此功能，请先在`Preference` 面板 -> `Markdown`选项卡中启用它。然后，使用`$`包装一个TeX命令。例如：`$\lim_{x \to \infty} \exp(-x) = 0$`将呈现为LaTeX命令。
+
+显示结果：
+
+---
+
+$\lim_{x \to \infty} \exp(-x) = 0$
+
+---
+
+要触发内联数学的内联预览：输入`$`，然后按`ESC`键，然后输入一个TeX命令。
+
+您可以在[此处](https://support.typora.io/Math/)找到更多详细信息。
+
+### 下标	--	Subscript
+
+```
+feature特色; 特征; 特点; 面容的一部分; 特写，专题节目; 以…为特色; 由…主演; 以…为主要组成; 起重要作用; 占重要地位
+enable使能够; 使有机会; 使成为可能; 使可行; 使实现
+Preference偏爱; 爱好; 喜爱; 偏爱的事物; 最喜爱的东西
+Panel嵌板，镶板，方格板块; 金属板，板金; 镶条，嵌条，饰片; 镶板
+Tab标签; 签条; 突耳; 凸舌; 账单，账款; 费用; 餐厅账单; 药片，药丸; 说适合于; 把视为…; 使用制表键
+wrap包，裹; 用…包裹; 用…缠绕; 披肩，围巾; 包裹材料; 完成拍摄，停机
+subscript写在下面的; 下标
+For example例如;比如
+text正文，本文; 文本; 文档; 演讲稿; 剧本; 文稿; 发短信
+```
+
+若要使用此功能，请先在`Preference` 面板 -> `Markdown`选项卡中启用它。然后，使用`~`包装下标内容。例如：`H~2~O`, `X~long\ text~`/
+
+### 上标	--	Superscript
+
+```
+Superscript--上標字;上标;上标字;上標;上角标
+```
+
+若要使用此功能，请先在`Preference` 面板 -> `Markdown`选项卡中启用它。然后，使用`^`包装上标内容。例如: `X^2^`.
+
+### 字体高亮	--	Highlight
+
+```
+highlight--v.突出;强调;将(文本的某部分)用彩笔做标记;将(计算机屏幕的某区域)增强亮度;使醒目;挑染(将部分头发染成浅色)--n.最好(或最精彩、最激动人心)的部分;挑染的头发;(图画或照片的)强光部分
+```
+
+若要使用此功能，请先在`Preference` 面板 -> `Markdown`选项卡中启用它。然后，使用`==`包装突出显示内容。例如：`==highlight==`.
+
+## HTML
+
+```
+HTML超文本标记语言
+style方式; 作风; 样式; 款式; 时新，时髦，流行式样; 把…设计成某种式样; 称呼; 命名; 称
+pure纯的; 纯净的; 纯粹的; 干净的; 不含有害物质的; 完全的
+does not不; 不是; 否定就用
+For example例如;比如
+span持续时间; 范围; 包括的种类; 墩距，跨距，跨度; 持续; 贯穿; 包括; 涵盖; 横跨; 跨越
+color彩色，颜色; 脸色，气色，肤色; 特色，个性；情调; 变红；脸红; 着色；渲染
+text正文，本文; 文本; 文档; 演讲稿; 剧本; 文稿; 发短信
+add增加; 加添; 加; 补充说; 继续说
+```
+
+您可以使用HTML来设置纯标记不支持的内容的样式。例如，使用`<span style="color:red">this text is red</span>`添加红色文本。
+
+### 内容嵌套	--	Embed Contents
+
+```
+Some一些，若干; 某些，部分，有的; 好些; 不少的; 相当多的; 有些人，有些事物; 部分; 有的; 有些; 若干; (用于数词前，意同approximately)大约，差不多; 稍微; 有点
+websites网站; website的复数
+provide提供; 供应; 给予; 规定
+embed把…牢牢地嵌入; 派遣; 嵌入(在I'm aware that she knows句中，she knows为内嵌句)
+code密码; 暗码; 电码; 代码; 编码; 道德准则; 行为规范; 为…编码; 把…译成密码; 编程序
+also而且; 此外; 也; 同样
+For example例如;比如
+```
+
+有些网站提供基于`iframe`的嵌入代码，你也可以将其粘贴到Typora中。例如：
+
+```Markdown
+<iframe height='265' scrolling='no' title='Fancy Animated SVG Menu' src='http://codepen.io/jeangontijo/embed/OxVywj/?height=265&theme-id=0&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'></iframe>
+```
+
+### 视频	--	Video
+
+```
+video录像带; 盒式录像带; 录像，录影; 录像; 录电视节目; 给…录像
+HTML超文本标记语言
+tag标签; 标牌; 称呼; 诨名; 附加语(为加强语气，如Yes, I do一句中的I do); 给…加上标签; 把…称作; 给…起诨名; 加标识符于
+embed把…牢牢地嵌入; 派遣; 嵌入(在I'm aware that she knows句中，she knows为内嵌句)
+videos录像带; 盒式录像带; 录像，录影; 录像; 录电视节目; 给…录像; video的第三人称单数和复数
+For example例如;比如
+```
+
+您可以使用`<video>`HTML标记嵌入视频。例如：
+
+```Markdown
+<video src="xxx.mp4" />
+```
+
+### 其他HTML支持	--	Other HTML Support
+
+您可以在[此处](https://support.typora.io/HTML/)找到更多详细信息。
+
+[GFM]: https://help.github.com/articles/github-flavored-markdown/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
