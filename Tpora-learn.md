@@ -435,6 +435,21 @@ delimited定…的界限; 限定; 界定; delimit的过去分词和过去式
 square brackets -- 方括号;方括號;中括号;括弧;方括号内
 square -- adj.正方形的;四方形的;成直角的;方的;(用于表示长度的单位后，表示某物四个边等长)…见方的--正方形;四方形;正方形物;(通常为方形的)广场;平方;二次幂--v.使成正方形;使成四方形;使成平方;使成二次幂;挺直身子;挺起胸膛--adv.正对着地;径直地
 bracker--n.括号;(价格、年龄、收入等的)组级，等级;(固定在墙上的)托架，支架--v.用括弧括上;把…等同考虑;把…相提并论
+inline一列式；排成行的；串联式的；联机的；轴向式的；在线上的
+a set of一套; 一副
+parentheses插入语; parenthesis的复数
+closing接近尾声的，结尾的，结束的; 停业，关闭; 倒闭; 关; 关闭; 闭上; 合上; 合拢; 关门，关闭; 不开放; close的现在分词
+square bracket方括号
+link to将…连接起来；链接到
+along with除某物以外; 随同…一起，跟…一起
+surrounded围绕; 环绕; 包围，围住; 与…紧密相关; surround的过去分词和过去式
+regular--adj.规则的;有规律的;间隙均匀的;定时的;频繁的;经常做(或发生)的;经常做某事的;常去某地的--n.常客;老主顾;主力(或正式)队员;(电视节目的)老主持人;经常参加某项活动的人;正规军人;职业军人
+parentheses--n.插入语--parenthesis的复数---圆括号
+parenthesis--n.插入语---括号
+immediately--adv.立即;马上;即刻;接近;紧接;附近;紧接地;直接地--conj.一…就;即刻
+point--n.论点;观点;见解;重点;要点;核心问题;意图;目的;理由--v.(用手指头或物体)指，指向;瞄准;对着;朝向
+optional--adj.可选择的;选修的
+quotes--v.引用;引述;举例说明;开价;出价;报价--n.引用v.引用;引述;举例说明;开价;出价;报价--n.引用
 ```
 
 
@@ -443,13 +458,89 @@ MarkDown支持两种链接样式：内联和引用。
 
 在这两种样式中，链接文本由[方括号]分隔。
 
+要创建内联链接，请在链接文本的右方括号后立即使用一组常规括号。在括号内，将链接指向的URL以及链接的可选标题放在引号中。例如：
 
+``` markdown
+This is [an example](http://example.com/ "Title") inline link.
 
+[This link](http://example.net/) has no title attribute.
+```
 
+将产生：
 
+This is [an example](http://example.com/"Title") inline link. (`<p>This is <a href="http://example.com/" title="Title">`)
 
+[This link](http://example.net/) has no title attribute. (`<p><a href="http://example.net/">This link</a> has no`)
 
+#### 内部链接	-- Internal Links
 
+```
+internal--adj.内部的;里面的;体内的;(机构)内部的
+set放; 置; 使处于; 使处于某种状况; 使开始; 把故事情节安排在; 以…为…设置背景; 一套，一副，一组; 一组; 一伙人; 阶层; 团伙; 位于…的; 安排好的; 确定的; 固定的; 顽固的; 固执的
+href--horizontal reference 水平参考，水平基准
+headers用头顶球; 头球; 标头，首标; header的复数
+create创造; 创作; 创建; 造成，引起，产生; 授予; 册封
+bookmark书签; 给…夹书签
+allow允许; 准许; 给予; 允许进入
+jump to猛增到jump to通常不用于进行体。
+section部分; 部门; 部件; 散件; 节; 款; 项; 段; 切开; 切断; 做切片; 强制入院治疗
+clicking使发出咔嗒声; 使咔嗒响; 点击，单击; 被突然明白; 豁然开朗; click的现在分词
+For example例如;比如
+Command命令; 指令; 控制; 管辖; 指挥; 指挥，统率; 应得; 博得; 值得
+Ctrl计算机的Ctrl按键; 蹲; 按
+jump to猛增到jump to通常不用于进行体。
+header用头顶球; 头球; 标头，首标
+cursor光标，游标
+link with将…与…相连；连接在一起；与…联合
+pressed紧缺，短绌; 压平的; 压扁的; 压，挤，推，施加压力; 按，压; 将…塞进; 把…按入; press的过去分词和过去式
+element要素; 基本部分; 典型部分; 少量; 有点; 有些; 一组，一群，一伙
+```
 
+**您可以给标题设置一个href**，这将创建一个书签，允许您在单击后跳转到该部分。例如：
 
+Command(on Windows: Ctrl) + Click [This link](#block-elements) will jump to header `Block Elements`. To see how to write that, please move cursor or click that link with `⌘` key pressed to expand the element into markdown source.
 
+命令（在Windows上：Ctrl）+单击[此链接](#块元素	--	block elements)将跳转到标题`Block Elements`。若要查看如何编写，请移动光标或按“⌘”键单击该链接，将元素展开到标记源中。
+
+#### 引用链接	--	Reference Links
+
+```
+reference--n.说到(或写到)的事;提到;谈及;涉及;参考;查询;查阅;(帮助或意见的)征求，征询--v.查阅;参考;给(书等)附参考资料
+links联系; 连接; 关系; 纽带; 交通路线; 通讯手段; 把连接起来; 相关联; 说明有联系; link的第三人称单数和复数
+second第二; 居第二位的; 另外的; 外加的; 以第二名; 以第二位; 第二，其次; 秒; 片刻; 瞬间; 支持，赞成; 附议; 临时调派; 短期调任
+set of的; 集合; 释……的集合
+inside在…内; 在…里; 少于; 在里面; 在监狱里; 被监禁; 里面; 内部; 内侧; 慢车道; 内侧，里道，内圈; 内部的; 里面的; 从内部了解到的; 内线干的
+place位置; 地点; 场所; 地方; 城镇; 有某用途的建筑; 放置，安放; 使处于某位置; 安置; 安顿; 以某种态度对待
+label标签; 签条; 标记; 称谓，绰号，叫法; 唱片公司; 贴标签于; 用标签标明; 把…称为
+choosing选择; 挑选; 选取; 宁愿; 情愿; 决定; choose的现在分词
+identify确认; 认出; 鉴定; 找到; 发现; 显示; 说明身份
+link联系; 连接; 关系; 纽带; 交通路线; 通讯手段; 把连接起来; 相关联; 说明有联系
+rendered--v.使成为;使变得;使处于某状态;给予;提供;回报;递交;呈献;提交--render的过去分词和过去式
+render--v.使成为;使变得;使处于某状态;给予;提供;回报;递交;呈献;提交
+implicit含蓄的; 不直接言明的; 成为一部分的; 内含的; 完全的; 无疑问的
+shortcut近路;捷径; 快捷办法，捷径; 快捷方式
+omit删除; 忽略; 漏掉; 遗漏; 不做; 未能做
+name of【法】刑名
+itself指施动并受其影响的动物或事物
+for example例如;比如
+web site网站
+case--n.具体情况;事例;实例;实情;事实;特殊情况--v.奏爵士乐，跳爵士舞;游荡;使活泼
+```
+
+引用链接使用第二组方括号，在其中放置选择的标签以标识链接：
+
+``` markdown
+This is [an example][id] reference-style link.
+
+Then, anywhere in the document, you define your link label on a line by itself like this:
+
+[id]: http://example.com/  "Optional Title Here"
+```
+
+在Typora中，它们的渲染方式如下：
+
+这是[示例][id]引用样式链接。
+
+[id]: http://example.com/	"Optional Title Here"
+
+隐式链接名称快捷方式允许您省略链接的名称，在这种情况下，链接文本本身用作名称。只需使用一组空白的方括号-例如，要将“Google”链接到Google.com网站，您只需编写：
